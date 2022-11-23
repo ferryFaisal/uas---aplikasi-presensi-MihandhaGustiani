@@ -20,8 +20,6 @@ $result1 = mysqli_query($conn, $sql1);
 $sql2 = "SELECT * FROM presensi";
 $result2 = mysqli_query($conn, $sql2);
 
-// $sql1 = "SELECT * FROM produk";
-// $result1 = mysqli_query($conn, $sql1);
 ?>
 
 

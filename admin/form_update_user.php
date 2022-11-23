@@ -66,32 +66,6 @@ if (mysqli_num_rows($result) > 0) {
             $role = trim($_POST["role"]);
             $valid_role = true;
         }
-
-        // $nama_file = $_FILES['file']['name'];
-        // $dir_upload = "photo_user/";
-        // $target_file = $dir_upload . basename($_FILES["file"]["name"]);
-
-// Select file type
-        // $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
-
-// Valid file extensions
-//         $extensions_arr = array("jpg", "jpeg", "png", "gif");
-
-// // Check extension
-//         if (in_array($imageFileType, $extensions_arr)) {
-//             // Upload file
-//             if (move_uploaded_file($_FILES['file']['tmp_name'], $dir_upload . $nama_file)) {
-//                 // Insert record
-
-//                 $valid_image = true;
-//             } else {
-//                 $imageErr = "File photo is required";
-//                 $valid_image = false;
-//             }
-//         } else {
-//             $imageErr = "File photo is required";
-//         }
-
     }
     ?>
 <!DOCTYPE html>

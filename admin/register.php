@@ -79,39 +79,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $role = test_input($_POST["role"]);
         $valid_role = true;
     }
-
-    // $nama_file = $_FILES['file']['name'];
-    // $dir_upload = "images/";
-    // $target_file = $dir_upload . basename($_FILES["file"]["name"]);
-
-    // // Select file type
-    // $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
-
-    // // Valid file extensions
-    // $extensions_arr = array("jpg", "jpeg", "png", "gif");
-
-    // // Check extension
-    // if (in_array($imageFileType, $extensions_arr)) {
-    //     // Upload file
-    //     move_uploaded_file($_FILES['file']['tmp_name'], $dir_upload . $nama_file);
-    //     // Insert record
-    //     $valid_image = true;
-    // } else {
-    //     $imageErr = "File photo is required";
-    //     $valid_image = false;
-
-    // }
-    // $dir_upload = "images/";
-    // $nama_file = $_FILES['file']['name'];
-
-    // if (is_uploaded_file($_FILES['file']['tmp_name'])) {
-    //     $cek = move_uploaded_file($_FILES['file']['tmp_name'], //source
-    //         // tujuan
-
-    //         $dir_upload . $nama_file);
-
-    // }
-
 }
 
 function test_input($data)
@@ -201,13 +168,6 @@ function test_input($data)
                                 </select>
                             </div>
                         </div>
-                        <!-- <div class="form-group">
-                            <label for="exampleFormControlFile1">Photo</label>
-                            <input type="file" class="form-control-file" id="exampleFormControlFile1" name='file'>
-
-
-                        </div> -->
-
                         <br><br>
                         <input class="btn btn-primary btn-block" type="submit" name="submit" value="Register">
                     </form>

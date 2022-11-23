@@ -4,7 +4,6 @@ require('connect_db.php');
   $nama   = $_POST['nama'];
   $nim     = $_POST['nim'];
   $kelas         = $_POST['kelas'];
-  // $gambar_produk = $_FILES['gambar_produk']['name'];
   $created       = date("created");
   $modified      = $created;
                   

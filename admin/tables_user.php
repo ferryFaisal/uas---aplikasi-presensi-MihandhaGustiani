@@ -3,10 +3,7 @@ require 'connect_db.php';
 session_start();
 if (isset($_SESSION['login']) && $_SESSION['role'] == "Admin") { //jika sudah login
     //menampilkan isi session
-    // echo "<h1>Selamat Datang " . $_SESSION['login'] . "</h1>";
-    // echo "<h2>Halaman ini hanya bisa diakses jika Anda sudah login</h2>";
-    // echo "<h2>Klik <a href='session3.php'>di sini (session03.php)</a> untuk LOGOUT</h2>";
-} else {
+    } else {
     //session belum ada artinya belum login
     die("Anda belum login! Anda tidak berhak masuk ke halaman ini.Silahkan login <a href='login.php'>di sini</a>");
 }
@@ -192,18 +189,7 @@ if (mysqli_num_rows($result) > 0) {
 mysqli_close($conn);
 ?>
                         </div>
-                        <!-- </div>
-                    <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
-                </div> -->
-
-
-
                     </div>
-
-
-
-
-
                 </div>
 
                 <footer class="sticky-footer">
