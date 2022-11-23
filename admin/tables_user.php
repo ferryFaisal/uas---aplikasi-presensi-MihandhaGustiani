@@ -8,7 +8,7 @@ if (isset($_SESSION['login']) && $_SESSION['role'] == "Admin") { //jika sudah lo
     // echo "<h2>Klik <a href='session3.php'>di sini (session03.php)</a> untuk LOGOUT</h2>";
 } else {
     //session belum ada artinya belum login
-    die("Anda belum login! Anda tidak berhak masuk ke halaman ini.Silahkan login <a href='\WebProgramming/uas---aplikasi-presensi-JOELLYZX/index.php'>di sini</a>");
+    die("Anda belum login! Anda tidak berhak masuk ke halaman ini.Silahkan login <a href='login.php'>di sini</a>");
 }
 $sql = "SELECT * FROM user";
 $result = mysqli_query($conn, $sql);
@@ -133,7 +133,7 @@ if ($cek2 > 0) {
                     <li class="breadcrumb-item active">Tables</li>
                 </ol>
                 <ol>
-                    <a href="\WebProgramming/uas---aplikasi-presensi-AbangMuhammadFajar/register.php"><button type="button" class="btn btn-primary">Add
+                    <a href="register.php"><button type="button" class="btn btn-primary">Add
                             User</button></a>
                 </ol>
 
