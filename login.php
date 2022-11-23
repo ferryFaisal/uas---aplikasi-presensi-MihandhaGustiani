@@ -47,18 +47,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo '</script>'; 
     }
     mysqli_close($conn);
-    // if (mysqli_num_rows($result) > 0) {
-    //     // output data of each row
-    //     while ($row = mysqli_fetch_assoc($result)) {
-
-    //         $_SESSION['login'] = $email;
-    //         header('Location:index.php');
-    //         echo $row['email'];
-    //         echo $row['password'];
-    //         break;
-    //     }
-
-    // }
 }
 
 ?>

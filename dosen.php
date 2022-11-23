@@ -3,9 +3,6 @@ require 'connect_db.php';
 session_start();
 if (isset($_SESSION['login'])) { //jika sudah login
     //menampilkan isi session
-    // echo "<h1>Selamat Datang " . $_SESSION['login'] . "</h1>";
-    // echo "<h2>Halaman ini hanya bisa diakses jika Anda sudah login</h2>";
-    // echo "<h2>Klik <a href='session3.php'>di sini (session03.php)</a> untuk LOGOUT</h2>";
 } else {
     die("Anda belum login! Anda tidak berhak masuk ke halaman ini.Silahkan login <a href='login.php'>di sini</a>");
 
@@ -40,23 +37,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         echo "sukses, silahkan check database anda";
     }
-    // $sql1 = "INSERT INTO presensi (tgl_presensi, makul, kelas, nim, nama, status_presensi)
-    // VALUES (sysdate(),
-    // '$makul',
-    // '$kelas',
-    // '$nim',
-    // '$nama',
-    // '$presensi')";
-
-    // if (mysqli_query($conn, $sql1)) {
-    //     echo "data berhasil dimasukkan ke database";
-    //     header('Location: index.php');
-
-    // } else {
-    //     echo "gagal memasukkan data: " . mysqli_error($conn);
-    // }
-
-    // mysqli_close($conn);
 }
 ?>
 
@@ -97,11 +77,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
               <div class="col-md-4">
                 <div class="form-label-group">
-                  <!-- <select name="kelas" id="kelas" class="form-control" autofocus="autofocus">
-                    <option  value=""> -- Pilih Kelas -- </option>
-                    <option  selected value="5A"> 5A </option>
-                    <option value="5B"> 5B </option>
-                  </select> -->
                   <p class="text-center">
                     Pilih Kelas
           <a class="btn btn-primary btn-block active" href="Dosen.php">5A</a>
